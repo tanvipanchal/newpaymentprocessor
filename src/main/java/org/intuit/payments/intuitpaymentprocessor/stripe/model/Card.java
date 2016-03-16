@@ -6,8 +6,7 @@ import java.util.HashMap;
 public class Card {
 	
 	String id;
-	String object;
-	//Address address;
+	String object;	
 	String address_city;
 	String address_country;
 	String address_line1;
@@ -19,7 +18,7 @@ public class Card {
 	String brand;
 	String country;
 	String currency;
-	String customer; //is this really needed?
+	String customer; 
 	String cvc_check;
 	Boolean default_for_currency;
 	String dynamic_last4;
@@ -38,10 +37,7 @@ public class Card {
 	}
 	public void setTokenization_method(String tokenization_method) {
 		this.tokenization_method = tokenization_method;
-	}
-	
-	
-	
+	}	
 	
 	public String getId() {
 		return id;

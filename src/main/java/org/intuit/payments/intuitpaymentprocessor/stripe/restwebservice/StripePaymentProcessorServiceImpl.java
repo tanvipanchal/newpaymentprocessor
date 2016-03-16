@@ -134,7 +134,7 @@ public class StripePaymentProcessorServiceImpl implements StripePaymentProcessor
 		form.param("description", description);
 		
 		ChargeResponse chargeRes = singleChargeTarget.resolveTemplate("chargeId", chargeId).request(MediaType.APPLICATION_JSON).header("Authorization", "Bearer sk_test_BQokikJOvBiI2HlWgH4olfQ2")
-				.put(Entity.entity(form, MediaType.APPLICATION_FORM_URLENCODED_TYPE), ChargeResponse.class);
+				.post(Entity.entity(form, MediaType.APPLICATION_FORM_URLENCODED_TYPE), ChargeResponse.class);
 		return chargeRes;
 		
 		

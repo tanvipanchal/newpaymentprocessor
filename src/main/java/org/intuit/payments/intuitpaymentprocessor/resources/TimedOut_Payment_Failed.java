@@ -71,8 +71,7 @@ public class TimedOut_Payment_Failed {
 	        
 	    }).start();
 		
-		Message m = new Message();
-		//System.out.println("Send payment success message." + asyncResponse.toString());
+		Message m = new Message();		
 		 m.setMessage("Payment Successful");
 		 return m;
 		
